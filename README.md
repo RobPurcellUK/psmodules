@@ -1,5 +1,9 @@
 # psmodules
-PowerShell modules and profile stuff
+PowerShell modules and profile stuff.
+
+Some are mine, some I've pulled together from blogs and sample code.
+
+I've lost the details of where they came from, so if you see this and think "that's mine!", I appologise.
 
 ![Example PS](img/ps.png "Example PS session")
 
@@ -52,6 +56,15 @@ by any other WebClients created in the session, unless set otherwise explicitly.
 Update the Powershell help, using the default network credentials for the proxy for help file download.
 
 You will need to run this as admin to update system module help.
+
+## Clear-SavedHistory
+For clearing up anything you've typed in a PS session that you don't want accessible later in history.
+
+Powershell has the Clear-History command, which clears the PS session command history.
+
+This doesn't clear the console host history, or the saved PS command history.
+
+This module provides `Clear-SavedHistory`, which clears the screen, the session history, **all** the saved history and the console host history.
 
 ## Write-Note
 Take notes from the PS command-line. Pass a string as the only param, and it's written to a dated file in `~\Documents\Notes\`.
