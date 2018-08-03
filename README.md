@@ -1,5 +1,5 @@
 # psmodules
-PowerShell modules and profile stuff.
+PowerShell modules and profile stuff
 
 Some are mine, some I've pulled together from blogs and sample code.
 
@@ -12,7 +12,7 @@ The files in `psfiles` should be placed in: `~\Documents\WindowsPowershell`.
 They will be loaded automatically on starting a PS session.
 
 You can replace your current `Microsoft.PowerShell_profile.ps1` file, or add parts from the one here to your existing one.
-This profile uses gitutils.ps1, Get-Fortune and Write-CowSay, and creates aliases for Write-Note and Show-Note.
+This profile uses gitutils.ps1, Get-Fortune and Write-CowSay, and creates aliases for Write-Note, Show-Note and AddCommitPushGit.
 
 # Annoying things
 You'll need to unblock the scripts after downloading, as Windows knows they come from the internet, which is bad.
@@ -43,6 +43,10 @@ If this branch was tracking a remote branch, I'd also get shown if my branch is 
 This is a set of helper methods for getting info from git in the current directory.
 
 Used here to add git info to the PS prompt.
+
+## AddCommitPushGit
+Bad practice, but good enough for me working on personal stuff. Add, commit and push in the current git
+repo, taking the commit message as a parameter. Aliased as `acp`.
 
 # Modules
 ## Set-UseSystemProxy
