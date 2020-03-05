@@ -91,7 +91,7 @@ function prompt {
     Write-Host
 
     # Battery
-    $charge = (Get-WmiObject Win32_Battery).EstimatedChargeRemaining
+    $charge = (Get-CimInstance -ClassName Win32_Battery).EstimatedChargeRemaining
 
     if((-not [System.String]::IsNullOrEmpty($charge)) -and ($charge -lt 100)) {
         $battColour = "Cyan"

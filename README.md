@@ -8,7 +8,7 @@ I've lost the details of where they came from, so if you see this and think "tha
 ![Example PS](img/ps.png "Example PS session")
 
 # Installation
-The files in `psfiles` should be placed in: `~\Documents\WindowsPowershell`.
+The files in `psfiles` should be placed in: `~\Documents\WindowsPowershell`, or `~\Documents\Powershell` if using PS Core (6+).
 They will be loaded automatically on starting a PS session.
 
 You can replace your current `Microsoft.PowerShell_profile.ps1` file, or add parts from the one here to your existing one.
